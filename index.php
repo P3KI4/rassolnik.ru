@@ -56,14 +56,13 @@
 					</section>
 				</div>
 			</div>
-			<div class="main__button">
-				<div class="content">
-					<input type="button" value="Подать заявку на аукцион">
+			<div class="content">
+				<div class="main__button">
+					<button class="button" type="submit">Подать заявку на аукцион</button>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
-
 		</footer>
 	</div>
 </body>
