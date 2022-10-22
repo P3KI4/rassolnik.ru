@@ -26,24 +26,24 @@
 						<li><a href="scene.php" class="link">Сцена</a></li>
 						<li><a href="humor.php" class="link">Юмор</a></li>
 						<li><a href="beauty.php" class="link">Красота</a></li>
-						<li class="header__search"><div>	</div></li>
-						<li class="header__signup"><div>	</div></li>
+						<li class="header__search"><div>	<img src="image/search.png" alt="" srcset="">	</div></li>
+						<li class="header__signup"><div>	<img src="image/user.png" alt="" srcset=""> </div></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<main class="main">
-			<div class="content">
+		<main class="container">
+				<div class="content">
 				<div class="main__discription">
 					<div class="main__headtxt">Аукционы</div>
 					<div class="main__undertext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam praesentium unde sit mollitia qui iusto possimus laborum repellendus magni, similique eveniet tempora voluptas fugiat, voluptates ex dolores, error ipsum ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque sapiente pariatur, modi eaque ex rerum veritatis possimus? Ab omnis autem quidem harum ipsum expedita nostrum. Quaerat deleniti incidunt quos?</div>
 					
 				</div>
-			</div>
-			<div class="content">
+				</div>
+				<div class="content">
 				<div class="main__grid">
-				<div class="main__pictures">
-					<section class="main__gridpictures">
+					<div class="main__pictures">
+						<section class="main__gridpictures">
 						<div class="picture__item picture"></div>
 						<div class="picture__item picture"></div>
 						<div class="picture__item picture"></div>
@@ -53,16 +53,22 @@
 						<div class="picture__item picture"></div>
 						<div class="picture__item picture"></div>
 						<div class="picture__item picture"></div>
-					</section>
+						</section>
+					</div>
+				</div>
+				</div>			
+				<div class="content">
+					<div class="main__button">
+						<button class="button__change" type="submit">Подать заявку на аукцион</button>
+					</div>
 				</div>
 			</div>
-			<div class="content">
-				<div class="main__button">
-					<button class="button" type="submit">Подать заявку на аукцион</button>
-				</div>
-			</div>
-		</main>
 		<footer class="footer">
+			<ul class="footer__links">
+				<li><a href="contacts.php" class="footer__link">Контакты</a></li>
+				<li><a href="help.php" class="footer__link">Помощь</a></li>
+				<li><a href="agrees.php" class="footer__link">Соглашения</a></li>
+			</ul>
 		</footer>
 	</div>
 </body>

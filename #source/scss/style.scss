@@ -1,4 +1,5 @@
 // Файл обнуляющих стилей
+
 @import "nullstyle.scss";
 
 //Подключение шрифтов
@@ -14,7 +15,7 @@ li	{
 	margin: 20px;
 }
 li:first-child{
-	margin: 0px 0px 0px 40px;
+	margin: 0px 0px 0px 20px;
 
 }
 li:last-child{
@@ -62,22 +63,24 @@ a{
 }
 
 .header {
-	margin: 20px 0px 20px 0px
+	margin: 10px 0px 20px 0px
 }
 .content {
 	max-width: 1500px;
 	margin: 1px auto;
 	background-color: #ffff;
+	flex: 1 1 auto;
 }
 .header__nav {
 	
 }
 
 .nav__links {
-	display: flex;
-			flex-direction: row;
 			justify-content:space-between;
-			padding: 20px 0px;
+			display: flex;
+		justify-content:center;
+		align-items: center;
+			padding: 10px 0px;
 
 }
 .header__icon {
@@ -96,8 +99,10 @@ a{
 .link {
 }
 .header__search {
+	padding: 15px 0px 0px 0px;
 }
 .header__signup {
+	padding: 10px 0px 0px 0px;
 }
 
 .main {
@@ -123,13 +128,13 @@ a{
 	}
 
 	&__pictures {
-		padding: 40px 20px;
+		padding: 40px 90px;
 		
 	}
 
 	&__gridpictures {
 		display: grid;
-	column-gap: 85px;
+	column-gap: 80px;
 	row-gap: 40px;
 	//автоматическое выстривание по сетке
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -146,39 +151,57 @@ a{
 	}
 }
 
-.main {
-	margin: 40px;
-	&__button {
-	border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-	}
+
+.container {
+	background: #fbf8f5;
+	margin: 0px auto;
+   width: 1500px;
 }
+
 
 .main {
 
-	&__button {
-	}
-}
-.content {
+		&__button {
+			padding: 20px;
+			margin: 20px;
+			width: 100%;
+			text-align: center;
+			
+		}
 }
 .button {
-		border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
+
+		&__change {
+			border: 0;
+			line-height: 2.5;
+			padding: 15px 80px;
+			font-size: 2rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			background-color: #f3ac16;
+			color: rgb(0, 0, 0);
+			text-shadow: 0px 0px 0px rgb(0, 0, 0);
+			border-radius: 2rem;
+		}
 }
 
 .footer {
+	background-color: #fff;
+	height: 90px;
+
+	&__links {
+		position: relative;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		margin: 0px auto;
+		padding: 10px 0px 0px 0px;
+
+	}
+
+	&__link {
+		font-size: 2rem;
+		font-weight: 500;
+	}
 }
+
