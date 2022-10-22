@@ -1,0 +1,182 @@
+// Файл обнуляющих стилей
+
+@import "nullstyle.scss";
+
+//Подключение шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+	font-family: Lato;
+	background-color: #fbf8f5;
+}
+
+//стили списка
+li	{
+	margin: 20px;
+}
+li:first-child{
+	margin: 0px 0px 0px 40px;
+
+}
+li:last-child{
+	margin: 0px;
+}
+
+//стрелочки в списке
+li:nth-child(1n+5)::after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 8px solid #000000;
+	margin: 0px 0px 0px 5px;
+	display: inline-block;
+	
+
+}
+
+li:nth-child(1n+14)::after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 0px solid #000000;
+	margin: 0px 0px 0px 0px;
+	display:inline-block;
+}
+
+//цвет ссылок
+a{
+	font-family: lato;
+	font-size: 18px;
+	color: #000;
+}
+
+//
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	margin: 20px 0px 20px 0px
+}
+.content {
+	max-width: 1500px;
+	margin: 1px auto;
+	background-color: #ffff;
+}
+.header__nav {
+	
+}
+
+.nav__links {
+	display: flex;
+			flex-direction: row;
+			justify-content:space-between;
+			padding: 20px 0px;
+
+}
+.header__icon {
+	width: 60px; /* поддерживаются любые единицы, в том числе проценты */
+	margin: 0px auto;
+	background: #ffc200;
+	border-radius: 50%;
+}
+.header__icon::before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		padding-top: 100%;
+}
+
+.link {
+}
+.header__search {
+}
+.header__signup {
+}
+
+.main {
+
+	&__discription {
+		text-align: center;
+
+	}
+
+	&__headtxt {
+		font-size: 32px;
+		font-weight: 600;
+		padding: 40px 0px 20px 0px;
+	}
+
+	&__undertext {
+		font-size: 24px;
+		padding: 0px 20px 40px 20px;
+		margin: 0px 50px 0px 50px;
+	}
+	&__grid {
+		margin: 20px;
+	}
+
+	&__pictures {
+		padding: 40px 20px;
+		
+	}
+
+	&__gridpictures {
+		display: grid;
+	column-gap: 85px;
+	row-gap: 40px;
+	//автоматическое выстривание по сетке
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+.picture {
+
+	&__item {
+		width: 400px;
+    height: 400px;
+    background: #f3ac16;
+	 
+	}
+}
+
+
+.main {
+
+		&__button {
+			padding: 40px;
+			margin: 20px;
+			width: 100%;
+			text-align: center;
+			
+		}
+}
+.button {
+
+		&__change {
+			border: 0;
+			line-height: 2.5;
+			padding: 30px 120px;
+			font-size: 2rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			background-color: #f3ac16;
+			color: rgb(255, 255, 255);
+			text-shadow: 1px 1px 1px rgb(87, 50, 8);
+			border-radius: 5rem;
+		}
+}
+
+
+
+
+
+.footer {
+}
