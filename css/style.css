@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: Lato;
+  background-color: #fbf8f5;
+}
+
+li {
+  margin: 20px;
+}
+
+li:first-child {
+  margin: 0px 0px 0px 40px;
+}
+
+li:last-child {
+  margin: 0px;
+}
+
+li:nth-child(1n+5)::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #000000;
+  margin: 0px 0px 0px 5px;
+  display: inline-block;
+}
+
+li:nth-child(1n+14)::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 0px solid #000000;
+  margin: 0px 0px 0px 0px;
+  display: inline-block;
+}
+
+a {
+  font-family: lato;
+  font-size: 18px;
+  color: #000;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  margin: 20px 0px 20px 0px;
+}
+
+.content {
+  max-width: 1500px;
+  margin: 1px auto;
+  background-color: #ffff;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.header__icon {
+  width: 60px;
+  /* поддерживаются любые единицы, в том числе проценты */
+  margin: 0px auto;
+  background: #ffc200;
+  border-radius: 50%;
+}
+
+.header__icon::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100%;
+}
+
+.main__discription {
+  text-align: center;
+}
+
+.main__headtxt {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 40px 0px 20px 0px;
+}
+
+.main__undertext {
+  font-size: 24px;
+  padding: 0px 20px 40px 20px;
+  margin: 0px 50px 0px 50px;
+}
+
+.main__grid {
+  margin: 20px;
+}
+
+.main__pictures {
+  padding: 40px 20px;
+}
+
+.main__gridpictures {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 85px;
+          column-gap: 85px;
+  row-gap: 40px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.picture__item {
+  width: 400px;
+  height: 400px;
+  background: #f3ac16;
+}
+
+.main {
+  margin: 40px;
+}
+
+.main__button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #dc0000;
+}
