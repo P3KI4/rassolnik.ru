@@ -42,6 +42,7 @@ a{
 
 //wrapper
 .wrapper {
+	margin: 0px 40px;
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
@@ -50,6 +51,7 @@ a{
 
 //width limit
 .content {
+	
 	max-width: 1500px;
 	margin: 1px auto;
 	background-color: #ffff;
@@ -131,21 +133,35 @@ nav ul li ul li:hover{
 	}
 	&__pictures {
 		padding: 40px 90px;
-		
+
 	}
 	&__gridpictures {
-		display: grid;
+	display: grid;
 	column-gap: 80px;
-	row-gap: 40px;
+	row-gap: 50px;
 	//автоматическое выстривание по сетке
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+
 	}
 	&__button {
 		padding: 20px;
 		margin: 20px;
 		width: 100%;
-		text-align: center;			
+		text-align: center;		
 	}
+}
+.picture{
+	&:hover{
+		transition: 0.5s;
+		box-shadow: 0px 2px 20px #fcad02 ;
+		transform: scale(1.01);
+		cursor:pointer;
+	}
+}
+
+.button__change:hover{
+	transition: 0.5s;
+	box-shadow: 0px 2px 20px #fcad02 ;
 }
 
 //making a solid block

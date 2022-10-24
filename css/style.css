@@ -123,6 +123,7 @@ a {
 }
 
 .wrapper {
+  margin: 0px 40px;
   min-height: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -241,9 +242,9 @@ nav ul li ul li:hover {
   display: grid;
   -webkit-column-gap: 80px;
           column-gap: 80px;
-  row-gap: 40px;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 50px;
+  -ms-grid-columns: (minmax(325px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
 .main__button {
@@ -251,6 +252,23 @@ nav ul li ul li:hover {
   margin: 20px;
   width: 100%;
   text-align: center;
+}
+
+.picture:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 2px 20px #fcad02;
+          box-shadow: 0px 2px 20px #fcad02;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  cursor: pointer;
+}
+
+.button__change:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 2px 20px #fcad02;
+          box-shadow: 0px 2px 20px #fcad02;
 }
 
 .picture__item {
