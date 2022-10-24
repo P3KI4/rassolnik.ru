@@ -101,6 +101,10 @@ body {
   margin: 40px 0px 40px 0px;
 }
 
+.header {
+  margin: 10px 0px 20px 0px;
+}
+
 .links__drop::after {
   content: "";
   width: 0;
@@ -128,10 +132,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.header {
-  margin: 10px 0px 20px 0px;
 }
 
 .content {
@@ -192,6 +192,7 @@ nav ul li:hover > ul {
 
 .links__drop:hover {
   background-color: #f3ac16;
+  border-radius: 5px;
 }
 
 nav ul ul li {
@@ -245,6 +246,13 @@ nav ul li ul li:hover {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.main__button {
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+}
+
 .picture__item {
   width: 400px;
   height: 400px;
@@ -255,13 +263,6 @@ nav ul li ul li:hover {
   background: #fbf8f5;
   margin: 0px auto;
   max-width: 1500px;
-}
-
-.main__button {
-  padding: 20px;
-  margin: 20px;
-  width: 100%;
-  text-align: center;
 }
 
 .button__change {
@@ -313,6 +314,15 @@ nav ul li ul li:hover {
   font-weight: 500;
 }
 
-.link {
-  font-size: 1.4rem;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c9c9c9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffd905;
+  border-radius: 10px;
 }

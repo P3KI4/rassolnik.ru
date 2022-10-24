@@ -26,7 +26,6 @@
 									<li><a href="#">Джаз</a></li>
 								</ul>
 						</li>
-
 						<li><a href="photo.php" class="links__drop headers">Фото</a>
 								<ul>
 									<li><a href="#">Еда</a></li>

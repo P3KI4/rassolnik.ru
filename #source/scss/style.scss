@@ -10,15 +10,18 @@ body {
 	background-color: #fbf8f5;
 }
 
-//стили списка
 
-
+//header
 .headers{
  font-size: 1.5em;
  margin: 40px 0px 40px 0px;
 }
 
-//стрелочки в списке
+.header {
+	margin: 10px 0px 20px 0px
+}
+
+//arrow at list
 .links__drop::after{
 	content: "";
 	width: 0;
@@ -30,14 +33,14 @@ body {
 	display: inline-block;
 }
 
-//цвет ссылок
+//list color
 a{
 	font-family: lato;
 	font-size: 18px;
 	color: #000;
 }
 
-//
+//wrapper
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -45,9 +48,7 @@ a{
 	flex-direction: column;
 }
 
-.header {
-	margin: 10px 0px 20px 0px
-}
+//width limit
 .content {
 	max-width: 1500px;
 	margin: 1px auto;
@@ -55,13 +56,12 @@ a{
 	flex: 1 1 auto;
 }
 
-
+//navigation and icon styling
 .nav__links {
 			justify-content:space-around;
 			display: flex;
 		align-items: center;
 			padding: 20px 0px;
-
 }
 .header__icon {
 	width: 60px;
@@ -79,18 +79,19 @@ a{
 		padding-top: 100%;
 }
 
+//drop-down list
+//hide list
 nav ul ul {
 	display:none;
 	position:absolute;
 }
-
 nav ul li:hover > ul {
 	display: block;
 }
 
-
 .links__drop:hover{
 	background-color: #f3ac16;
+	border-radius: 5px;
 }
 
 nav ul ul li {
@@ -109,19 +110,16 @@ nav ul li ul li:hover{
 	background-color: #c78b0a;
 }
 
+//main
 .main {
-	
 	&__discription {
 		text-align: center;
-
 	}
-
 	&__headtxt {
 		font-size: 32px;
 		font-weight: 600;
 		padding: 40px 0px 20px 0px;
 	}
-
 	&__undertext {
 		line-height: 1.3em;
 		font-size: 24px;
@@ -131,12 +129,10 @@ nav ul li ul li:hover{
 	&__grid {
 		margin: 20px;
 	}
-
 	&__pictures {
 		padding: 40px 90px;
 		
 	}
-
 	&__gridpictures {
 		display: grid;
 	column-gap: 80px;
@@ -144,38 +140,33 @@ nav ul li ul li:hover{
 	//автоматическое выстривание по сетке
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
+	&__button {
+		padding: 20px;
+		margin: 20px;
+		width: 100%;
+		text-align: center;			
+	}
 }
 
+//making a solid block
 .picture {
 
 	&__item {
 		width: 400px;
-    height: 400px;
-    background: #f3ac16;
-	 
+   height: 400px;
+   background: #f3ac16;
 	}
 }
 
-
+//container for main block
 .container {
 	background: #fbf8f5;
 	margin: 0px auto;
    max-width: 1500px;
 }
 
-
-.main {
-
-		&__button {
-			padding: 20px;
-			margin: 20px;
-			width: 100%;
-			text-align: center;
-			
-		}
-}
+//btn styling
 .button {
-
 		&__change {
 			border: 0;
 			line-height: 2.5;
@@ -190,6 +181,7 @@ nav ul li ul li:hover{
 		}
 }
 
+//footer styling
 .footer {
 	justify-content:space-around;
 			display: flex;
@@ -206,20 +198,20 @@ nav ul li ul li:hover{
 			margin: 0px 0px 0px 20px;
 		}
 	}
-
-
 	&__link {
-
 		font-size: 1.5rem;
 		font-weight: 500;
 	}
 }
 
-.header__nav {
-
+//scrollbar
+::-webkit-scrollbar{
+	width: 10px;
 }
-
-.link {
-	font-size: 1.4rem;
-
+::-webkit-scrollbar-track{
+	background-color: #c9c9c9;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #ffd905;
+	border-radius: 10px;
 }
