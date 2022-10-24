@@ -13,69 +13,138 @@
 			<div class="content">
 				<nav class="header__nav">
 					<ul class="nav__links">
-						<li class="header__icon"><div>	</div></li>
-						<li><a href="auctions.php" class="links__static headers">Аукционы</a></li>
-						<li><a href="members.php" class="links__static headers">Участники</a></li>
-						<li><a href="gallery.php" class="links__static headers">Галлерея</a></li>
-						
-						<li><a href="#" class="links__drop headers">Музыка</a>
-								<ul>
-									<li><a href="#">Поп</a></li>
-									<li><a href="#">Рок</a></li>
-									<li><a href="#">Реп</a></li>
-									<li><a href="#">Джаз</a></li>
-								</ul>
-						</li>
-						<li><a href="photo.php" class="links__drop headers">Фото</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li><a href="craft.php" class="links__drop headers">Ремесло</a>
-								<ul>
-									<li><a href="#">Гончарное</a></li>
-									<li><a href="#">Кузнечное</a></li>
-								</ul>
-						</li>
-						<li><a href="design.php" class="links__drop headers">Дизайн</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li><a href="pictures.php" class="links__drop headers">Арт</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li><a href="poetry.php" class="links__drop headers">Поэзия</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li><a href="scene.php" class="links__drop headers">Сцена</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li><a href="humor.php" class="links__drop headers">Юмор</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li><a href="beauty.php" class="links__drop headers">Красота</a>
-								<ul>
-									<li><a href="#">Еда</a></li>
-									<li><a href="#">Страны</a></li>
-								</ul>
-						</li>
-						<li class="header__search"><div>	<img src="image/search.png" alt="" srcset="">	</div></li>
-						<li class="header__signup"><div>	<img src="image/user.png" alt="" srcset=""> </div></li>
+						<div class="hide__navigation">
+							<li class="header__icon"><div>	</div></li>
+							<li><a href="auctions.php" class="links__static headers">Аукционы</a></li>
+							<li><a href="members.php" class="links__static headers">Участники</a></li>
+							<li><a href="gallery.php" class="links__static headers">Галлерея</a></li>
+								<li><a href="#" class="links__drop headers">Музыка</a>
+										<ul>
+											<li><a href="#">Поп</a></li>
+											<li><a href="#">Рок</a></li>
+											<li><a href="#">Реп</a></li>
+											<li><a href="#">Джаз</a></li>
+										</ul>
+								</li>
+								<li><a href="photo.php" class="links__drop headers">Фото</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+								<li><a href="craft.php" class="links__drop headers">Ремесло</a>
+										<ul>
+											<li><a href="#">Гончарное</a></li>
+											<li><a href="#">Кузнечное</a></li>
+										</ul>
+								</li>
+								<li><a href="design.php" class="links__drop headers">Дизайн</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+								<li><a href="pictures.php" class="links__drop headers">Арт</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+								<li><a href="poetry.php" class="links__drop headers">Поэзия</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+								<li><a href="scene.php" class="links__drop headers">Сцена</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+								<li><a href="humor.php" class="links__drop headers">Юмор</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+								<li><a href="beauty.php" class="links__drop headers">Красота</a>
+										<ul>
+											<li><a href="#">Еда</a></li>
+											<li><a href="#">Страны</a></li>
+										</ul>
+								</li>
+							<li class="header__search"><div>	<img src="image/search.png" alt="" srcset="">	</div></li>
+							<li class="header__signup"><div>	<img src="image/user.png" alt="" srcset=""> </div></li>
+						</div>
+						<div class="show__navigation">
+							<li class="header__icon"><div>	</div></li>
+							<li><a href="auctions.php" class="links__static headers">Аукционы</a></li>
+							<li><a href="members.php" class="links__static headers">Участники</a></li>
+							<li><a href="gallery.php" class="links__static headers">Галлерея</a></li>
+							<li class="mx1360__navigation "><a href="#" class="links__drop headers">Разделы</a>
+							<ul>
+										<li><a href="#" class="links__drop headers">Музыка</a>
+												<ul>
+													<li><a href="#">Поп</a></li>
+													<li><a href="#">Рок</a></li>
+													<li><a href="#">Реп</a></li>
+													<li><a href="#">Джаз</a></li>
+												</ul>
+										</li>
+										<li><a href="photo.php" class="links__drop headers">Фото</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+										<li><a href="craft.php" class="links__drop headers">Ремесло</a>
+												<ul>
+													<li><a href="#">Гончарное</a></li>
+													<li><a href="#">Кузнечное</a></li>
+												</ul>
+										</li>
+										<li><a href="design.php" class="links__drop headers">Дизайн</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+										<li><a href="pictures.php" class="links__drop headers">Арт</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+										<li><a href="poetry.php" class="links__drop headers">Поэзия</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+										<li><a href="scene.php" class="links__drop headers">Сцена</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+										<li><a href="humor.php" class="links__drop headers">Юмор</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+										<li><a href="beauty.php" class="links__drop headers">Красота</a>
+												<ul>
+													<li><a href="#">Еда</a></li>
+													<li><a href="#">Страны</a></li>
+												</ul>
+										</li>
+									</ul>	
+							</li>
+							<li class="header__search"><div>	<img src="image/search.png" alt="" srcset="">	</div></li>
+							<li class="header__signup"><div>	<img src="image/user.png" alt="" srcset=""> </div></li>
+						</div>
 					</ul>
 				</nav>
 			</div>
