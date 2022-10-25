@@ -179,6 +179,7 @@
 					</div>
 				</div>
 			</div>
+		</main>
 		<footer class="footer">
 			<ul class="footer__links">
 				<li><a href="contacts.php" class="footer__link">Контакты</a></li>
