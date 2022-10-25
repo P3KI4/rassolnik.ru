@@ -5,20 +5,31 @@
 //Подключение шрифтов
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
+dl, ol, ul {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
 body {
 	font-family: Lato;
 	background-color: #fbf8f5;
 }
 
+a:hover{
+	text-decoration:none;
+	color: #000;
+ }
+
+ul {
+	padding-inline-start: 0px;
+}
 //header
 .headers{
  font-size: 1.5em;
- margin: 40px 0px 40px 0px;
+ margin: 0px 0px 0px 0px;
 }
 
-.header {
-	margin: 10px 0px 20px 0px
-}
+
 
 //arrow at list
 .links__drop::after{
@@ -64,15 +75,15 @@ body {
 		position:absolute;
 		top: 0;
 		left: 100%;
+		
 	}
 	nav ul li:hover > ul {
 		display: block;
-		
+		font-size: 13.5px;
 	}
 	
 	.links__drop:hover{
-		background-color: #f3ac16;
-		border-radius: 0px 0px 0px 0px;
+		border-radius: 0px 0px 0px 0px;		
 	}
 }
 
@@ -134,25 +145,31 @@ nav ul li:hover > ul {
 }
 
 .links__drop:hover{
-	background-color: #f3ac16;
+
 	border-radius: 5px 5px 0px 0px;
 }
 
 nav ul ul li {
 	min-width:170px;
-	display:table;
+	display:block;
 	position:relative;
 	display: block;
 	padding: 10px;
-	background-color: #f3ac16;
-	z-index: 0;
+	background-color: #eeeeee;
+	border: 1px solid #eeeeee;
+	z-index: 1;
 	&:last-child{
 		border-radius: 0px 0px 20px 20px;
 	}
 }
+nav ul ul li:nth-child(2n+1){
+	background-color: #fafafa;
+	border: 1px solid #fafafa;
+}
 
 nav ul li ul li:hover{
-	background-color: #c78b0a;
+	background-color: #cacaca;
+	border: 1px solid #eeeeee;
 }
 
 //main
@@ -179,11 +196,14 @@ nav ul li ul li:hover{
 
 	}
 	&__gridpictures {
-	display: grid;
-	column-gap: 80px;
-	row-gap: 50px;
-	//автоматическое выстривание по сетке
-	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+		display: grid;
+		column-gap: 96px;
+		row-gap: 50px;
+		grid-template-columns: repeat(auto-fit, minmax(325px, 2fr));
+		align-content: space-between;
+		justify-content: space-between;
+		align-items: center;
+		justify-items: center;
 
 	}
 	&__button {
@@ -217,12 +237,6 @@ nav ul li ul li:hover{
 	}
 }
 
-//container for main block
-.container {
-	background: #fbf8f5;
-	margin: 0px auto;
-   max-width: 1500px;
-}
 
 //btn styling
 .button {
@@ -271,6 +285,6 @@ nav ul li ul li:hover{
 	background-color: #ebebeb;
 }
 ::-webkit-scrollbar-thumb{
-	background-color: #f3ac16;
+	background-color: #bebebe;
 	border-radius: 10px;
 }
